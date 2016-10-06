@@ -29,5 +29,17 @@ Set up script in package.json
 Add start message in package.json prestart step
   add message.js to tools
   add prestart to scripts section in package.json  
+Start web dev server (-s = silent)
+  $ npm start -s
+Add linter in package.json 
+  "lint" : "node_modules/.bin/esw webpack.config.* src tools"
+  add lint:watch
+Put linter and server start together in a script.
+Setup mocha 
+  copied testSetup.js to tools folder
+  add test file
+
+
+
 
 
