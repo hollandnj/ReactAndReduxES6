@@ -75,7 +75,8 @@ function 1 returns a function, so...
   result1 = function1(arg1)
   result1(arg2)
 
-
-
+** Async in Redux **
+Redux Async libraries:
+  redux-thunk redux-promise redux-saga
 
 
