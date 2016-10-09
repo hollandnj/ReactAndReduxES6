@@ -25,7 +25,7 @@ class CoursesPage extends React.Component {
   }
 
   courseRow(course, index) {
-    return (<div key={index}>{course.title}</div>);
+    return (<div>{course}</div>);
   }
 
   render() {
@@ -47,6 +47,11 @@ class CoursesPage extends React.Component {
     );
   }
 }
+
+CoursesPage.propTypes = {
+  dispatch: PropTypes.func.isRequired,
+  courses: PropTypes.array.isRequired
+};
 
 function mapStateToProps(state, ownProps) {
   return {
