@@ -39,6 +39,42 @@ Setup mocha
   copied testSetup.js to tools folder
   add test file
 
+** Actions, Stores, and Reducers **
+Action Creators usually have the same name as the type
+Immutability
+Object.assign(target, ...sources)
+Object.({}, state, {property: 'value'});
+ES6^
+Reference comparison if (prevStoreState !== storeState) ...
+
+PURE functions: always return the same value given the same inputs
+A given action can  be handled by independent reducers
+
+** Connecting React to Redux **
+React-Redux
+Provider (goes in application root)
+Connect
+
+mapStateToProps What state should I expose as props?
+"reselect" library - memoize (like caching for function calls)
+mapDispatchToProps What actions do I want on props?
+ 3 ways to handle:
+ 1. ignore, use dispatch
+ 2. manually wrap
+ 3. use bindActionCreators()
+
+** Redux Flow **
+
+For performance put bind calls in the constructor
+
+...state SPREAD OPERATOR
+
+function 1 returns a function, so...
+  function1(arg1)(arg2)
+  OR
+  result1 = function1(arg1)
+  result1(arg2)
+
 
 
 
