@@ -78,5 +78,13 @@ function 1 returns a function, so...
 ** Async in Redux **
 Redux Async libraries:
   redux-thunk redux-promise redux-saga
+  const {courses, prop2, prop3} = this.props;
+  ^ Destructuring can save you repeating this.props.
+
+** Async Writes in Redux **
+
+
+
+
 
 
