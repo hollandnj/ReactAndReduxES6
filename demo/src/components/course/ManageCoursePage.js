@@ -3,13 +3,14 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as courseActions from '../../actions/courseActions';
 import CourseForm from './CourseForm';
+import {browserHistory} from 'react-router';
 
 class ManageCoursePage extends React.Component {
   constructor(props, context) {
     super(props, context);
 
     this.state = {
-      course: Object.assign({}, props.course),
+      course: Object.assign({}, this.props.course),
       errors: {}
     };
 
