@@ -1,4 +1,6 @@
-*** 1. Environment Setup ***
+# Notes
+
+## Environment Setup
 
 $ node -v
   v6.7.0
@@ -39,7 +41,7 @@ Setup mocha
   copied testSetup.js to tools folder
   add test file
 
-** Actions, Stores, and Reducers **
+## Actions, Stores, and Reducers
 Action Creators usually have the same name as the type
 Immutability
 Object.assign(target, ...sources)
@@ -50,7 +52,7 @@ Reference comparison if (prevStoreState !== storeState) ...
 PURE functions: always return the same value given the same inputs
 A given action can  be handled by independent reducers
 
-** Connecting React to Redux **
+## Connecting React to Redux
 React-Redux
 Provider (goes in application root)
 Connect
@@ -63,7 +65,7 @@ mapDispatchToProps What actions do I want on props?
  2. manually wrap
  3. use bindActionCreators()
 
-** Redux Flow **
+## Redux Flow
 
 For performance put bind calls in the constructor
 
@@ -75,13 +77,13 @@ function 1 returns a function, so...
   result1 = function1(arg1)
   result1(arg2)
 
-** Async in Redux **
+## Async in Redux
 Redux Async libraries:
   redux-thunk redux-promise redux-saga
   const {courses, prop2, prop3} = this.props;
   ^ Destructuring can save you repeating this.props.
 
-** Async Writes in Redux **
+## Async Writes in Redux
 
 
 
