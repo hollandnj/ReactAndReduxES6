@@ -5,17 +5,17 @@
 $ node -v
   v6.7.0
 ```
-* I already have the latest version of node. *
+I already have the latest version of node.
 
-* Create package.json *
+Create package.json
 Copied content from github pluralsight-redux-starter
 ```
-   $ npm install
+$ npm install
 ```
 
 Atom recommended packages 
-  react
-  terminal-plus
+  * react
+  * terminal-plus
 
 Create folder src
 Create index.html index.js
@@ -48,10 +48,13 @@ Setup mocha
 
 ## Actions, Stores, and Reducers
 Action Creators usually have the same name as the type
+
 Immutability
+```
+\\ in ES6 
 Object.assign(target, ...sources)
 Object.({}, state, {property: 'value'});
-ES6^
+```
 Reference comparison if (prevStoreState !== storeState) ...
 
 PURE functions: always return the same value given the same inputs
@@ -74,21 +77,32 @@ mapDispatchToProps What actions do I want on props?
 
 For performance put bind calls in the constructor
 
-...state SPREAD OPERATOR
+Look at the *spread operator*
+```
+...state 
+```
 
 function 1 returns a function, so...
-  function1(arg1)(arg2)
-  OR
-  result1 = function1(arg1)
-  result1(arg2)
+```
+function1(arg1)(arg2)
+```
+is equivalent to 
+```
+result1 = function1(arg1)
+result1(arg2)
+```
 
 ## Async in Redux
 Redux Async libraries:
+  * redux-thunk
+  * redux-promise 
+  * redux-saga
+  
+Destructuring can save you repeating this.props.
 ```
-  redux-thunk redux-promise redux-saga
   const {courses, prop2, prop3} = this.props;
-  ^ Destructuring can save you repeating this.props.
 ```
+
 ## Async Writes in Redux
 
 
