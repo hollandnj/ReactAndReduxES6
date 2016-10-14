@@ -1,14 +1,17 @@
 # Notes
 
 ## Environment Setup
-
+```
 $ node -v
   v6.7.0
+```
 * I already have the latest version of node. *
 
 * Create package.json *
 Copied content from github pluralsight-redux-starter
-$ npm install
+```
+   $ npm install
+```
 
 Atom recommended packages 
   react
@@ -32,7 +35,9 @@ Add start message in package.json prestart step
   add message.js to tools
   add prestart to scripts section in package.json  
 Start web dev server (-s = silent)
+```
   $ npm start -s
+```
 Add linter in package.json 
   "lint" : "node_modules/.bin/esw webpack.config.* src tools"
   add lint:watch
@@ -79,10 +84,11 @@ function 1 returns a function, so...
 
 ## Async in Redux
 Redux Async libraries:
+```
   redux-thunk redux-promise redux-saga
   const {courses, prop2, prop3} = this.props;
   ^ Destructuring can save you repeating this.props.
-
+```
 ## Async Writes in Redux
 
 
